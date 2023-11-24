@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Montserrat&family=Poppins:ital,wght@0,300;0,700;1,400;1,700;1,800&family=Roboto:wght@400;700&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script defer src="/styles/index.js"></script>
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <section>
+      <div id="Age_Form">
+        <form action="Send">
+          <label for="Send">
+            Day
+            <input
+              type="number"
+              placeholder="DD"
+              class="user_born"
+              name="user_day"
+            />
+            <span class="msj_empty">This field is required</span>
+            <span class="msj_invalid">Must be a valid day</span>
+          </label>
+          <label for="Send">
+            Month
+            <input
+              type="number"
+              placeholder="MM"
+              class="user_born"
+              name="user_month"
+            />
+            <span class="msj_empty">This field is required</span>
+            <span class="msj_invalid">Must be a valid month</span>
+          </label>
+          <label for="Send">
+            Year
+            <input
+              type="number"
+              placeholder="YYYY"
+              class="user_born"
+              name="user_year"
+            />
+            <span class="msj_empty">This field is required</span>
+            <span class="msj_invalid">Must be in the past</span>
+          </label>
+        </form>
+      </div>
+      <div id="button_container">
+        <hr />
+        <button type="button" id="press_result">
+          <img
+            src="/assets/images/icon-arrow.svg"
+            alt="arrow_img"
+            class="arrow"
+          />
+        </button>
+      </div>
+      <div id="result_container">
+        <div id="years_result" class="results">
+          <p id="user_year_result">- -  </p><span class="result_detail">years</span></div>
+        <div id="month_result" class="results">
+          <p id="user_month_result">- -  </p><span class="result_detail">months</span></div>
+        <div id="days" class="results">
+          <p id="user_day_result">- -  </p><span class="result_detail">days</span></div>
+        </div>
+        
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Carlos Hernandez</a>.
+    </div>
+  </body>
+</html>
