@@ -171,9 +171,12 @@ button:hover {
     position: relative;
     transform: translate(202px, -54px);
   }
-
   #button_container {
     display: grid;
-    height: 40px;
+    height: 60px;
+  }
+  #result_container {
+    display: grid;
+    place-content: start;
   }
 }
